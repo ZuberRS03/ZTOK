@@ -1,0 +1,1 @@
+#Ten plik powstał żeby folder wpadł na gita :)
