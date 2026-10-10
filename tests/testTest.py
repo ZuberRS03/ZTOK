@@ -3,18 +3,14 @@ from time import perf_counter
 from datetime import datetime
 from pathlib import Path
 import sys
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import csv
 import hashlib
-
 from scipy.special import gammaincc
 from scipy.stats import binomtest
-
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from generators.classical_generator import ClassicalGenerator
 from generators.quantum_generator import QuantumGenerator
 from generators.noisy_quantum_generator import NoisyQuantumGenerator
-
 
 # Ustawienia eksperymentów.
 LENGTHS = [1000, 10000, 100000]
